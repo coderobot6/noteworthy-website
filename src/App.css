@@ -21,7 +21,7 @@ html {
 #scroll-container {
   width: 100%;
   height: 100vh;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
   overflow-y: scroll; 
 }
 
@@ -44,6 +44,7 @@ html {
   color: white;
   background-color: #20405E;
   scroll-behavior: smooth;
+  height: 100vh;
   margin-left: 7%;
   margin-top: 3%;
   width: 50%;
@@ -86,21 +87,109 @@ html {
   margin-bottom: 13%;
 }
 
+#hire-us{
+  color: white;
+  background-color: #20405E;
+  scroll-behavior: smooth;
+  margin-left: 7%;
+  height: 100vh;
+  margin-top: 3%;
+  width: 50%;
+}
+
+#hire-us-title {
+  color: #6CDFBC;
+  font-family: 'Righteous';
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 55px;
+  margin-top: 30%;
+  padding-top: 46%;
+}
+
+
+
+
+#hire-us-description1, #hire-us-description2, #hire-us-description3  {
+  color: white;
+  font-family: "Comfortaa";
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px;
+  
+}
+
+#hire-us-description1 {
+  font-weight: 600;
+  font-size: 28px;
+}
+
+#hire-us-description2 {
+  font-weight: 300;
+  font-size: 18px;
+}
+
+#hire-us-description3 {
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 25%;
+}
+
+#hire-us3{
+  color: white;
+  background-color: #20405E;
+  scroll-behavior: smooth;
+  height: 100vh;
+  margin-left: 7%;
+  margin-top: 45%;
+  width: 100%;
+}
+
+#song-requests, #times, #charity {
+  
+  font-family: "Dongle";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 55px;
+  
+}
+
+#song-requests-text, #times-text, #charity-text {
+  
+  
+  font-size: 14;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 55px;
+  
+}
+
+
+
+
+
+
+
+
+
 mark {
   background-color: transparent;
   color: gold;
 }
 
 
-.parallax {
-  /* The image used */
-  /* background-image: url("./assets/noteworthy-group.png"); */
-  /* Set a specific height */
-  min-height: 500px; 
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+  .parallax {
+    /* The image used */
+    /* background-image: url("./assets/noteworthy-group.png"); */
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
