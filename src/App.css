@@ -25,6 +25,20 @@ html {
   overflow-y: scroll; 
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+}
+
 #landing-page, #about-us {
   height: 100vh;
   scroll-snap-align: start;
@@ -63,7 +77,7 @@ html {
 #about-us-subtitle {
   color: #6CDFBC;
   font-family: "Comfortaa";
-  font-size: 45px;
+  font-size: 40px;
   font-style: normal;
   font-weight: 700;
   margin-top: -5%;
@@ -72,7 +86,7 @@ html {
 #about-us-description1, #about-us-description2 {
   color: white;
   font-family: "Comfortaa";
-  font-size: 25px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: 48px;
@@ -100,16 +114,31 @@ html {
 #hire-us-title {
   color: #6CDFBC;
   font-family: 'Righteous';
-  font-size: 100px;
+  font-size: 87px;
   font-style: normal;
   font-weight: 400;
   line-height: 55px;
-  margin-top: 30%;
-  padding-top: 46%;
+  padding-top: 10%;
 }
 
 
+#concert {
+  height: 230px;
+  width: 400px;
+  margin-left: 112%;
+}
 
+#group1{
+  height: 200px;
+  width: 400px;
+  margin-left: 112%;
+}
+
+#group2 {
+  height: 200px;
+  width: 400px;
+  margin-left: 112%;
+}
 
 #hire-us-description1, #hire-us-description2, #hire-us-description3  {
   color: white;
@@ -124,6 +153,7 @@ html {
 #hire-us-description1 {
   font-weight: 600;
   font-size: 28px;
+  margin-top: -120%;
 }
 
 #hire-us-description2 {
@@ -134,7 +164,7 @@ html {
 #hire-us-description3 {
   font-weight: 300;
   font-size: 18px;
-  margin-top: 25%;
+  margin-top: 8%;
 }
 
 #hire-us3{
@@ -157,15 +187,15 @@ html {
   
 }
 
-#song-requests-text, #times-text, #charity-text {
-  
-  
+#song-requests-text, #times-text, #charity-text { 
   font-size: 14;
   font-style: normal;
   font-weight: 600;
   line-height: 55px;
   
 }
+
+
 
 
 
