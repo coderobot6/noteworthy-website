@@ -4,6 +4,12 @@ import noteWorthyTitle from "./assets/noteworthy-title.svg";
 import concertJpeg from "./assets/concert.jpeg";
 import group1 from "./assets/group1.jpeg";
 import group2 from "./assets/group2.jpeg";
+import image2 from "./assets/image2.png";
+import image3 from "./assets/image3.png";
+import image4 from "./assets/image4.png";
+import image5 from "./assets/image5.png";
+import image6 from "./assets/image6.png";
+
 
 function Navbar() {
   return (
@@ -110,6 +116,15 @@ function App() {
           If you are a subsidiary of UC Berkeley, and you’re organizing a
           charity event on campus, we are happy to give you a reduced rate.
         </h3>
+      </div>
+
+      <div id="our-favorite-videos">
+        <img id="image2" src={image2} alt="Image 2" />
+        <img id="image3" src={image3} alt="Image 3" />
+        <img id="image4" src={image4} alt="Image 4" />
+        <img id="image5" src={image5} alt="Image 5" />
+        <img id="image6" src={image6} alt="Image 6" />
+
       </div>
     </div>
   );
