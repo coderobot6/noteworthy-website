@@ -10,7 +10,6 @@ import image4 from "./assets/image4.png";
 import image5 from "./assets/image5.png";
 import image6 from "./assets/image6.png";
 
-
 function Navbar() {
   return (
     <nav>
@@ -32,7 +31,7 @@ function Navbar() {
 function App() {
   return (
     <div id="scroll-container">
-      <Navbar />
+      {/* <Navbar /> */}
       <div
         id="landing-page"
         className="parallax"
@@ -62,7 +61,6 @@ function App() {
       </div>
 
       <div id="hire-us">
-        
         <h1 id="hire-us-title">Hire Us</h1>
         <img id="concert" src={concertJpeg} alt="Concert" />
         <img id="group1" src={group1} alt="Group 1" />
@@ -86,9 +84,20 @@ function App() {
           you boys again!” <br />
           ~Tom Bercu, President of <u>Tom Bercu Presents</u>
         </h3>
+      </div>
 
-        
-        
+      <div id="ready-hire">
+        <h1 id="ready-hire-title">Ready to Hire Us?</h1>
+        <h3 id="ready-hire-description">Email our business manager (noteworthy@ucchoral.berkeley.edu)</h3>
+        <h3 id="let-us-know">Let us know:</h3>
+        <ul id="ready-hire-list">
+          <li>Who you are</li>
+          <li>Details of the event (where and when)</li>
+          <li>Songs you’d like us to perform & how long the performance should be</li>
+        </ul>
+        <h3 id="ready-hire-description"> and fill out this form</h3>
+        <h3 id="ready-hire-description">We will respond to you with a quote as soon as possible!</h3>
+
       </div>
 
       <div id="hire-us3">
@@ -124,7 +133,6 @@ function App() {
         <img id="image4" src={image4} alt="Image 4" />
         <img id="image5" src={image5} alt="Image 5" />
         <img id="image6" src={image6} alt="Image 6" />
-
       </div>
     </div>
   );
