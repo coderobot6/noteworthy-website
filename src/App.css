@@ -13,17 +13,22 @@
   src: url('/fonts/Comfortaa.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Righteous';
+  src: url('/fonts/Righteous.ttf') format('truetype');
+}
+
 html {
   -moz-osx-font-smoothing: grayscale;
   font-optical-sizing: auto;
 }
 
-#scroll-container {
+/* #scroll-container {
   width: 100%;
   height: 100vh;
   scroll-snap-type: y proximity;
   overflow-y: scroll; 
-}
+} */
 
 nav {
   position: fixed;
@@ -39,7 +44,7 @@ nav ul {
   padding: 0;
 }
 
-#landing-page, #about-us {
+#landing-page, #about-us, #image-vids-collage, #hire-us, #hire-us3, #ready-hire{
   height: 100vh;
   scroll-snap-align: start;
 }
@@ -60,7 +65,6 @@ nav ul {
   scroll-behavior: smooth;
   height: 100vh;
   margin-left: 7%;
-  margin-top: 3%;
   width: 50%;
 }
 
@@ -71,7 +75,7 @@ nav ul {
   font-style: normal;
   font-weight: 700;
   line-height: 55px;
-  padding-top: 46%;
+  padding-top: 35%;
 }
 
 #about-us-subtitle {
@@ -97,16 +101,28 @@ nav ul {
   padding-top: 3%;
 }
 
-#about-us-description2 {
-  margin-bottom: 13%;
+#image-vids-collage{
+  margin-top: 10%;
+  padding-bottom: 5%;
+}
+
+#image2 {
+  height: 430px;
+  width: 400px;
+}
+#image5 {
+  height: 430px;
+  width: 320px;
+}
+#image6 {
+  height: 430px;
+  width: 540px;
 }
 
 #hire-us{
   color: white;
   background-color: #20405E;
   scroll-behavior: smooth;
-  height: 100vh;
-  margin-top: 10%;
   width: 50%;
 }
 
@@ -119,12 +135,11 @@ nav ul {
   font-style: normal;
   font-weight: 400;
   line-height: 55px;
-  padding-top: 25%;
-  padding-left: 123%;
+  padding-top: 6%;
+  padding-left: 122%;
   margin-right: -100%;
   margin-bottom: 4%;
 }
-
 
 #concert {
   height: 220px;
@@ -151,14 +166,13 @@ nav ul {
   font-style: normal;
   font-weight: 500;
   line-height: 48px;
-  margin-left: 17%; 
-  
+  margin-left: 15%; 
 }
 
 #hire-us-description1 {
   font-weight: 600;
   font-size: 28px;
-  margin-top: -107%;
+  margin-top: -93%;
 }
 
 #hire-us-description2 {
@@ -176,30 +190,65 @@ nav ul {
   line-height: 28px;
 }
 
+#ready-hire{
+  color: white;
+  background-color: #20405E;
+  scroll-behavior: smooth;
+  margin-left: 7%;
+  margin-top: 6%;
+  padding-top: 1%;
+}
+
+#ready-hire-title {
+  font-family: 'Righteous';
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #F8C645;
+  color: transparent;
+  font-size: 94px;
+  font-style: normal;
+}
+
+#ready-hire-description, #let-us-know, #ready-hire-list{
+  color: white;
+  font-family: "Comfortaa";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 48px;
+}
+#let-us-know{
+  margin-left: 6%;
+}
+#ready-hire-list {
+  width: 80%;
+  margin-left: 7%; 
+  margin-top: -2%;
+}
+
 #hire-us3 {
   color: white;
   background-color: #20405E;
   scroll-behavior: smooth;
   height: 100vh;
-  /* margin-left: 3%; */
-  margin-top: 45%;
   width: 100%;
+  padding-top: 3%;
 }
 
 #song-requests, #times, #charity {
   font-family: "Dongle";
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: 480;
   line-height: 55px;
-  
+  margin-left: 7%;
 }
 
 #song-requests-text, #times-text, #charity-text { 
-  font-size: 14;
-  font-style: normal;
+  font-size: 20px;
+  font-family: "Comfortaa";
   font-weight: 600;
-  line-height: 55px;
+  line-height: 60px;
+  margin-left: 7%;
+  margin-top: -3%;
+  width: 86%;
   
 }
 

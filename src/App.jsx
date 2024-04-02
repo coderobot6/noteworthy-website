@@ -59,6 +59,15 @@ function App() {
           and performed at the 2022 UC Berkeley commencement.
         </h3>
       </div>
+      
+      <div id="image-vids-collage">
+        <img id="image2" src={image2} alt="Image 2" />
+        <img id="image5" src={image5} alt="Image 5" />
+        <img id="image6" src={image6} alt="Image 6" />
+        <iframe id="kenvid" width="630" height="315" src="https://www.youtube.com/watch?v=kW57PpibCMA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="zfvid" width="630" height="315" src="https://www.youtube.com/watch?v=n0p8MxT8AxI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+      </div>
 
       <div id="hire-us">
         <h1 id="hire-us-title">Hire Us</h1>
@@ -125,14 +134,6 @@ function App() {
           If you are a subsidiary of UC Berkeley, and you’re organizing a
           charity event on campus, we are happy to give you a reduced rate.
         </h3>
-      </div>
-
-      <div id="our-favorite-videos">
-        <img id="image2" src={image2} alt="Image 2" />
-        <img id="image3" src={image3} alt="Image 3" />
-        <img id="image4" src={image4} alt="Image 4" />
-        <img id="image5" src={image5} alt="Image 5" />
-        <img id="image6" src={image6} alt="Image 6" />
       </div>
     </div>
   );
