@@ -23,25 +23,46 @@ html {
   font-optical-sizing: auto;
 }
 
-/* #scroll-container {
+#scroll-container {
   width: 100%;
   height: 100vh;
-  scroll-snap-type: y proximity;
+  scroll-snap-type: y mandatory;
   overflow-y: scroll; 
-} */
+} 
+
+#bearicon {
+  height: 70px;
+  width: 73px;
+  margin-left: -27%;
+  /* margin-top: 2%; */
+}
 
 nav {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 70%;
   z-index: 1;
 }
 
 nav ul {
   display: flex;
-  justify-content: space-around;
   list-style-type: none;
   padding: 0;
+}
+
+nav ul li {
+  margin-left: 5%;
+  padding-top: 1%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: top;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Comfortaa"; 
+  font-size: 20px;
+  line-height: 3;
 }
 
 #landing-page, #about-us, #image-vids-collage, #hire-us, #hire-us3, #ready-hire{
@@ -75,7 +96,7 @@ nav ul {
   font-style: normal;
   font-weight: 700;
   line-height: 55px;
-  padding-top: 35%;
+  padding-top: 40%;
 }
 
 #about-us-subtitle {
@@ -90,7 +111,7 @@ nav ul {
 #about-us-description1, #about-us-description2 {
   color: white;
   font-family: "Comfortaa";
-  font-size: 24px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 500;
   line-height: 48px;
@@ -102,21 +123,30 @@ nav ul {
 }
 
 #image-vids-collage{
-  margin-top: 10%;
-  padding-bottom: 5%;
+  margin-top: 6%;
 }
 
 #image2 {
-  height: 430px;
-  width: 400px;
+  height: 58.2%;
+  width: 35%;
 }
 #image5 {
-  height: 430px;
-  width: 320px;
+  height: 58.2%;
+  width: 26%;
 }
 #image6 {
-  height: 430px;
-  width: 540px;
+  height: 58.2%;
+  width: 39%;
+}
+
+#kenvid{
+  width: 50%; 
+  height: 44.3%;
+}
+
+#zfvid{
+  width: 50%; 
+  height: 44.3%;
 }
 
 #hire-us{
@@ -124,6 +154,7 @@ nav ul {
   background-color: #20405E;
   scroll-behavior: smooth;
   width: 50%;
+  margin-top: 10%;
 }
 
 #hire-us-title {
@@ -135,28 +166,22 @@ nav ul {
   font-style: normal;
   font-weight: 400;
   line-height: 55px;
-  padding-top: 6%;
-  padding-left: 122%;
+  padding-top: 14%;
+  padding-left: 130%;
   margin-right: -100%;
   margin-bottom: 4%;
 }
 
 #concert {
-  height: 220px;
-  width: 400px;
-  margin-left: 112%;
+  height: 30%;
+  width: 74%;
+  margin-left: 114%;
 }
 
 #group1{
-  height: 180px;
-  width: 400px;
-  margin-left: 112%;
-}
-
-#group2 {
-  height: 230px;
-  width: 400px;
-  margin-left: 112%;
+  height: 30%;
+  width: 74%;
+  margin-left: 114%;
 }
 
 #hire-us-description1, #hire-us-description2, #hire-us-description3  {
@@ -164,7 +189,6 @@ nav ul {
   font-family: "Comfortaa";
   font-size: 25px;
   font-style: normal;
-  font-weight: 500;
   line-height: 48px;
   margin-left: 15%; 
 }
@@ -172,22 +196,22 @@ nav ul {
 #hire-us-description1 {
   font-weight: 600;
   font-size: 28px;
-  margin-top: -93%;
+  margin-top: -65%;
 }
 
 #hire-us-description2 {
   font-weight: 300;
-  font-size: 20px;
+  font-size: 22px;
   margin-top: -3%;
-  line-height: 34px;
+  line-height: 36px;
 }
 
 #hire-us-description3 {
   font-weight: 300;
-  font-size: 15px;
+  font-size: 17px;
   margin-top: 8%;
   font-weight: 10;
-  line-height: 28px;
+  line-height: 30px;
 }
 
 #ready-hire{
@@ -195,8 +219,7 @@ nav ul {
   background-color: #20405E;
   scroll-behavior: smooth;
   margin-left: 7%;
-  margin-top: 6%;
-  padding-top: 1%;
+  padding-top: 5%;
 }
 
 #ready-hire-title {
@@ -230,7 +253,8 @@ nav ul {
   scroll-behavior: smooth;
   height: 100vh;
   width: 100%;
-  padding-top: 3%;
+  margin-top: -6%;
+  padding-top: 8%;
 }
 
 #song-requests, #times, #charity {

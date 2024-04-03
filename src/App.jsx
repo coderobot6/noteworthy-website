@@ -9,19 +9,55 @@ import image3 from "./assets/image3.png";
 import image4 from "./assets/image4.png";
 import image5 from "./assets/image5.png";
 import image6 from "./assets/image6.png";
+import bearicon from "./assets/bearnw.png";
+
+function App() {
+  const smoothScroll = (e) => {
+    e.preventDefault();
+    document.querySelector(e.target.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+};
 
 function Navbar() {
   return (
     <nav>
       <ul>
         <li>
-          <a href="#landing-page">Home</a>
+          <img id="bearicon" src={bearicon} />
         </li>
         <li>
-          <a href="#about-us">About Us</a>
+          <a id="lp1" href="#landing-page">
+            Home
+          </a>
         </li>
         <li>
-          <a href="#hire-us">Hire Us</a>
+          <a id="lp" href="#about-us">
+            About Us
+          </a>
+        </li>
+        <li>
+          <a id="lp" href="#hire-us" onClick={smoothScroll}>
+            Hire Us
+          </a>
+        </li>
+        <li>
+          <a id="lp" href="">
+            Our Team
+          </a>
+        </li>
+        <li>
+          <a id="lp" href="">
+            Auditions
+          </a>
+        </li>
+        <li>
+          <a
+            id="lp"
+            href="https://noteworthy.studentorg.berkeley.edu/welcome-back-spring-2024/"
+          >
+            Spr2024
+          </a>
         </li>
       </ul>
     </nav>
@@ -31,7 +67,10 @@ function Navbar() {
 function App() {
   return (
     <div id="scroll-container">
-      {/* <Navbar /> */}
+      <nav className="navbar">
+        <Navbar />
+      </nav>
+
       <div
         id="landing-page"
         className="parallax"
@@ -59,21 +98,32 @@ function App() {
           and performed at the 2022 UC Berkeley commencement.
         </h3>
       </div>
-      
+
       <div id="image-vids-collage">
         <img id="image2" src={image2} alt="Image 2" />
         <img id="image5" src={image5} alt="Image 5" />
         <img id="image6" src={image6} alt="Image 6" />
-        <iframe id="kenvid" width="630" height="315" src="https://www.youtube.com/watch?v=kW57PpibCMA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <iframe id="zfvid" width="630" height="315" src="https://www.youtube.com/watch?v=n0p8MxT8AxI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        
+        <iframe
+          id="kenvid"
+          src="https://www.youtube.com/watch?v=kW57PpibCMA"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          id="zfvid"
+          src="https://www.youtube.com/watch?v=n0p8MxT8AxI"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
 
       <div id="hire-us">
         <h1 id="hire-us-title">Hire Us</h1>
         <img id="concert" src={concertJpeg} alt="Concert" />
         <img id="group1" src={group1} alt="Group 1" />
-        <img id="group2" src={group2} alt="Group 2" />
+        {/* <img id="group2" src={group2} alt="Group 2" /> */}
         <h3 id="hire-us-description1">
           <strong>
             We're no stranger to{" "}
@@ -91,22 +141,27 @@ function App() {
           performance made it a true pleasure to work with you all. Everyone in
           the crowd loved you, and I hope to have the pleasure of working with
           you boys again!” <br />
-          ~Tom Bercu, President of <u>Tom Bercu Presents</u>
+          ~Tom Bercu, President of Tom Bercu Presents
         </h3>
       </div>
 
       <div id="ready-hire">
         <h1 id="ready-hire-title">Ready to Hire Us?</h1>
-        <h3 id="ready-hire-description">Email our business manager (noteworthy@ucchoral.berkeley.edu)</h3>
+        <h3 id="ready-hire-description">
+          Email our business manager (noteworthy@ucchoral.berkeley.edu)
+        </h3>
         <h3 id="let-us-know">Let us know:</h3>
         <ul id="ready-hire-list">
           <li>Who you are</li>
           <li>Details of the event (where and when)</li>
-          <li>Songs you’d like us to perform & how long the performance should be</li>
+          <li>
+            Songs you’d like us to perform & how long the performance should be
+          </li>
         </ul>
         <h3 id="ready-hire-description"> and fill out this form</h3>
-        <h3 id="ready-hire-description">We will respond to you with a quote as soon as possible!</h3>
-
+        <h3 id="ready-hire-description">
+          We will respond to you with a quote as soon as possible!
+        </h3>
       </div>
 
       <div id="hire-us3">
