@@ -11,6 +11,11 @@ import image5 from "./assets/image5.png";
 import image6 from "./assets/image6.png";
 import bearicon from "./assets/bearnw.png";
 import socialrect from "./assets/socialsrect.png";
+import bluerect from "./assets/bluerect.png";
+import fbicon from "./assets/fbicon.png";
+import instaicon from "./assets/instaicon.png";
+import tiktokicon from "./assets/tiktokicon.png";
+import yticon from "./assets/yticon.png";
 
 function Navbar() {
   const smoothScroll = (e) => {
@@ -87,13 +92,13 @@ function App() {
         <h1 id="about-us-title">NOTEWORTHY</h1>
         <h1 id="about-us-subtitle">In-vest-ed in A Cappella</h1>
         <h3 id="about-us-description1">
-          We're a lower-voices a cappella group known for our fun performances
+          We&apos;re a lower-voices a cappella group known for our fun performances
           and fresh takes on popular songs! It always feels <mark>sunny</mark>{" "}
           when we perform, and not just because of our <mark>golden vests</mark>
           !
         </h3>
         <h3 id="about-us-description2">
-          Since our founding in 2000, we've gone million-view-viral on YouTube
+          Since our founding in 2000, we&apos;ve gone million-view-viral on YouTube
           multiple times, released an album entirely composed of original songs,
           and performed at the 2022 UC Berkeley commencement.
         </h3>
@@ -104,17 +109,21 @@ function App() {
         <img id="image5" src={image5} alt="Image 5" />
         <img id="image6" src={image6} alt="Image 6" />
         <img id="socialrect" src={socialrect} alt="social rect" />
+        <img id="flyersrect" src={socialrect} alt="social rect" />
+        <img id="concertdesrect" src={socialrect} alt="social rect" />
+        <img id="favsrect" src={bluerect} alt="blue rect" />
+        <img id="concertrect" src={bluerect} alt="blue rect" />
         <iframe
           id="kenvid"
-          src="https://www.youtube.com/watch?v=kW57PpibCMA"
-          frameborder="0"
+          src="https://www.youtube.com/embed/kW57PpibCMA"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
         <iframe
           id="zfvid"
-          src="https://www.youtube.com/watch?v=n0p8MxT8AxI"
-          frameborder="0"
+          src="https://www.youtube.com/embed/n0p8MxT8AxI"
+          frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
@@ -127,13 +136,13 @@ function App() {
         {/* <img id="group2" src={group2} alt="Group 2" /> */}
         <h3 id="hire-us-description1">
           <strong>
-            We're no stranger to{" "}
+            We&apos;re no stranger to{" "}
             <mark>weddings, private parties, tailgates, and conferences.</mark>
           </strong>
         </h3>
         <h3 id="hire-us-description2">
-          We've performed at venues including San Francisco City Hall,
-          University House, the Faculty Club, and UC Berkeley's 2022
+          We&apos;ve performed at venues including San Francisco City Hall,
+          University House, the Faculty Club, and UC Berkeley&apos;s 2022
           Commencement.
         </h3>
         <h3 id="hire-us-description3">
@@ -170,8 +179,8 @@ function App() {
           <mark>Song Requests</mark>
         </h1>
         <h3 id="song-requests-text">
-          Check out our current repertoire for a sample of the songs we perform.
-          If the song you want isn’t listed there, ask us about it — we might
+          Check out our current repertoire for a sample of the songs we perform.
+          If the song you want isn&apos;t listed there, ask us about it — we might
           have it arranged already. With enough advance notice, we can perform
           anything from our archive, which is large and always growing.
         </h3>
@@ -179,7 +188,7 @@ function App() {
           <mark>Times and locations</mark>
         </h1>
         <h3 id="times-text">
-          We’re available to perform throughout the academic year and can travel
+          We&apos;re available to perform throughout the academic year and can travel
           anywhere in the Bay Area. Traveling beyond the Bay Area may require
           extra planning and travel costs.
         </h3>
@@ -187,7 +196,7 @@ function App() {
           <mark>UC Berkeley Charity Events</mark>
         </h1>
         <h3 id="charity-text">
-          If you are a subsidiary of UC Berkeley, and you’re organizing a
+          If you are a subsidiary of UC Berkeley, and you&apos;re organizing a
           charity event on campus, we are happy to give you a reduced rate.
         </h3>
       </div>
