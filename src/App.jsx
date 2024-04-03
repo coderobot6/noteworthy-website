@@ -10,16 +10,16 @@ import image4 from "./assets/image4.png";
 import image5 from "./assets/image5.png";
 import image6 from "./assets/image6.png";
 import bearicon from "./assets/bearnw.png";
-
-function App() {
-  const smoothScroll = (e) => {
-    e.preventDefault();
-    document.querySelector(e.target.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-};
+import socialrect from "./assets/socialsrect.png";
 
 function Navbar() {
+  const smoothScroll = (e) => {
+    e.preventDefault();
+    document.querySelector(e.target.getAttribute("href")).scrollIntoView({
+      behavior: "smooth",
+    });
+  };
+
   return (
     <nav>
       <ul>
@@ -27,12 +27,12 @@ function Navbar() {
           <img id="bearicon" src={bearicon} />
         </li>
         <li>
-          <a id="lp1" href="#landing-page">
+          <a id="lp1" href="#landing-page" onClick={smoothScroll}>
             Home
           </a>
         </li>
         <li>
-          <a id="lp" href="#about-us">
+          <a id="lp" href="#about-us" onClick={smoothScroll}>
             About Us
           </a>
         </li>
@@ -103,6 +103,7 @@ function App() {
         <img id="image2" src={image2} alt="Image 2" />
         <img id="image5" src={image5} alt="Image 5" />
         <img id="image6" src={image6} alt="Image 6" />
+        <img id="socialrect" src={socialrect} alt="social rect" />
         <iframe
           id="kenvid"
           src="https://www.youtube.com/watch?v=kW57PpibCMA"

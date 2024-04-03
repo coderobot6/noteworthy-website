@@ -124,6 +124,7 @@ nav ul li a {
 
 #image-vids-collage{
   margin-top: 6%;
+  position: relative;
 }
 
 #image2 {
@@ -147,6 +148,12 @@ nav ul li a {
 #zfvid{
   width: 50%; 
   height: 44.3%;
+}
+
+#socialrect {
+  position: absolute;
+  top: 50%;
+  left: -3%;
 }
 
 #hire-us{
