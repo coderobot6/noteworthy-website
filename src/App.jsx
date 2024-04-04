@@ -1,5 +1,10 @@
-import teamPhoto from "./assets/noteworthy-group.png";
+import React from "react";
+import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import MembersPage from "./pages/MembersPage";
+import Navbar from "./components/Navbar";
+
 import "./App.css";
+import teamPhoto from "./assets/noteworthy-group.png";
 import noteWorthyTitle from "./assets/noteworthy-title.svg";
 import concertJpeg from "./assets/concert.jpeg";
 import group1 from "./assets/group1.jpeg";
@@ -9,7 +14,6 @@ import image3 from "./assets/image3.png";
 import image4 from "./assets/image4.png";
 import image5 from "./assets/image5.png";
 import image6 from "./assets/image6.png";
-import bearicon from "./assets/bearnw.png";
 import socialrect from "./assets/socialsrect.png";
 import bluerect from "./assets/bluerect.png";
 import fbicon from "./assets/fbicon.png";
@@ -17,57 +21,6 @@ import instaicon from "./assets/instaicon.png";
 import tiktokicon from "./assets/tiktokicon.png";
 import yticon from "./assets/yticon.png";
 
-function Navbar() {
-  const smoothScroll = (e) => {
-    e.preventDefault();
-    document.querySelector(e.target.getAttribute("href")).scrollIntoView({
-      behavior: "smooth",
-    });
-  };
-
-  return (
-    <nav>
-      <ul>
-        <li>
-          <img id="bearicon" src={bearicon} />
-        </li>
-        <li>
-          <a id="lp1" href="#landing-page" onClick={smoothScroll}>
-            Home
-          </a>
-        </li>
-        <li>
-          <a id="lp" href="#about-us" onClick={smoothScroll}>
-            About Us
-          </a>
-        </li>
-        <li>
-          <a id="lp" href="#hire-us" onClick={smoothScroll}>
-            Hire Us
-          </a>
-        </li>
-        <li>
-          <a id="lp" href="">
-            Our Team
-          </a>
-        </li>
-        <li>
-          <a id="lp" href="">
-            Auditions
-          </a>
-        </li>
-        <li>
-          <a
-            id="lp"
-            href="https://noteworthy.studentorg.berkeley.edu/welcome-back-spring-2024/"
-          >
-            Spr2024
-          </a>
-        </li>
-      </ul>
-    </nav>
-  );
-}
 
 function App() {
   return (
