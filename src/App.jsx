@@ -1,5 +1,5 @@
 import React from "react";
-import {BrowserRouter as Router, Route, Link} from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import MembersPage from "./pages/MembersPage";
 import Navbar from "./components/Navbar";
 
@@ -20,7 +20,6 @@ import fbicon from "./assets/fbicon.png";
 import instaicon from "./assets/instaicon.png";
 import tiktokicon from "./assets/tiktokicon.png";
 import yticon from "./assets/yticon.png";
-
 
 function App() {
   return (
@@ -45,15 +44,15 @@ function App() {
         <h1 id="about-us-title">NOTEWORTHY</h1>
         <h1 id="about-us-subtitle">In-vest-ed in A Cappella</h1>
         <h3 id="about-us-description1">
-          We&apos;re a lower-voices a cappella group known for our fun performances
-          and fresh takes on popular songs! It always feels <mark>sunny</mark>{" "}
-          when we perform, and not just because of our <mark>golden vests</mark>
-          !
+          We&apos;re a lower-voices a cappella group known for our fun
+          performances and fresh takes on popular songs! It always feels{" "}
+          <mark>sunny</mark> when we perform, and not just because of our{" "}
+          <mark>golden vests</mark>!
         </h3>
         <h3 id="about-us-description2">
-          Since our founding in 2000, we&apos;ve gone million-view-viral on YouTube
-          multiple times, released an album entirely composed of original songs,
-          and performed at the 2022 UC Berkeley commencement.
+          Since our founding in 2000, we&apos;ve gone million-view-viral on
+          YouTube multiple times, released an album entirely composed of
+          original songs, and performed at the 2022 UC Berkeley commencement.
         </h3>
       </div>
 
@@ -62,10 +61,25 @@ function App() {
         <img id="image5" src={image5} alt="Image 5" />
         <img id="image6" src={image6} alt="Image 6" />
         <img id="socialrect" src={socialrect} alt="social rect" />
-        <img id="flyersrect" src={socialrect} alt="social rect" />
-        <img id="concertdesrect" src={socialrect} alt="social rect" />
+        <img id="flyersrect" src={socialrect} alt="flyer rect" />
         <img id="favsrect" src={bluerect} alt="blue rect" />
         <img id="concertrect" src={bluerect} alt="blue rect" />
+        <img id="concertdesrect" src={socialrect} alt="social rect" />
+
+        <div id="flyersrect">
+          <p>Come to our events!</p>
+        </div>
+        <div id="favsrect">
+          <p>Our Favs</p>
+        </div>
+        <div id="concertrect">
+          <p>Concerts on Sproul: Fridays at 2</p>
+        </div>
+        <div id="concertdesrect">
+          <p>On a lazy Friday afternoon, come join us for our weekly concert
+            under Sather Gate!</p>        
+        </div>
+
         <iframe
           id="kenvid"
           src="https://www.youtube.com/embed/kW57PpibCMA"
@@ -133,17 +147,17 @@ function App() {
         </h1>
         <h3 id="song-requests-text">
           Check out our current repertoire for a sample of the songs we perform.
-          If the song you want isn&apos;t listed there, ask us about it — we might
-          have it arranged already. With enough advance notice, we can perform
-          anything from our archive, which is large and always growing.
+          If the song you want isn&apos;t listed there, ask us about it — we
+          might have it arranged already. With enough advance notice, we can
+          perform anything from our archive, which is large and always growing.
         </h3>
         <h1 id="times">
           <mark>Times and locations</mark>
         </h1>
         <h3 id="times-text">
-          We&apos;re available to perform throughout the academic year and can travel
-          anywhere in the Bay Area. Traveling beyond the Bay Area may require
-          extra planning and travel costs.
+          We&apos;re available to perform throughout the academic year and can
+          travel anywhere in the Bay Area. Traveling beyond the Bay Area may
+          require extra planning and travel costs.
         </h3>
         <h1 id="charity">
           <mark>UC Berkeley Charity Events</mark>
